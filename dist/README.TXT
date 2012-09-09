@@ -1,32 +1,16 @@
 ========================
-BUILD OUTPUT DESCRIPTION
+jGlacier 0.1
+Copyright 2012 by Frédéric Bolvin
+Licensed under the GPL v3
+
+Github: https://github.com/Fensterbank/jGlacier
+Author: http://bolvin.de
 ========================
 
-When you build an Java application project that has a main class, the IDE
-automatically copies all of the JAR
-files on the projects classpath to your projects dist/lib folder. The IDE
-also adds each of the JAR files to the Class-Path element in the application
-JAR files manifest file (MANIFEST.MF).
+Welcome to jGlacier 0.1, an open source JAVA client for Amazon Glacier.
+Before you start, you have to create a file 'credentials.json' in your WORKING DIRECTORY.
 
-To run the project from the command line, go to the dist folder and
-type the following:
+You have to type your credentials for Amazon Glacier in this file to authenticate on the service like this example:
+{"accessKey":"*** YOUR ACCESS KEY ***","secretKey":"*** YOUR SECRET KEY ***"}
 
-java -jar "jGlacier.jar" 
-
-To distribute this project, zip up the dist folder (including the lib folder)
-and distribute the ZIP file.
-
-Notes:
-
-* If two JAR files on the project classpath have the same name, only the first
-JAR file is copied to the lib folder.
-* Only JAR files are copied to the lib folder.
-If the classpath contains other types of files or folders, these files (folders)
-are not copied.
-* If a library on the projects classpath also has a Class-Path element
-specified in the manifest,the content of the Class-Path element has to be on
-the projects runtime path.
-* To set a main class in a standard Java project, right-click the project node
-in the Projects window and choose Properties. Then click Run and enter the
-class name in the Main Class field. Alternatively, you can manually type the
-class name in the manifest Main-Class element.
+Now just start the application and upload your files!
