@@ -12,10 +12,7 @@
 package jglacier;
 
 import com.amazonaws.services.glacier.model.GlacierJobDescription;
-import com.amazonaws.services.glacier.model.InitiateJobRequest;
-import com.amazonaws.services.glacier.transfer.JobStatusMonitor;
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Date;
 import java.util.List;
@@ -26,14 +23,13 @@ public class Menu {
     
     public Menu() {        
         entries = new String[7];
-        entries[0] = "Upload archive";                // 1
-        entries[1] = "Download archive";            // 2
-        entries[2] = "Initiate a new inventory job";              // 3
-        entries[3] = "Display the jobs list";           // 4
-        entries[4] = "Display a job output";           // 5
-        entries[5] = "Display last inventory";           // 6        
-        //entries[3] = "Jobergebnis abfragen";
-        entries[6] = "Exit program";                // 7
+        entries[0] = "Upload archive";                          // 1
+        entries[1] = "Download archive";                        // 2
+        entries[2] = "Initiate a new inventory job";            // 3
+        entries[3] = "Display the jobs list";                   // 4
+        entries[4] = "Display a job output";                    // 5
+        entries[5] = "Display last inventory";                  // 6                
+        entries[6] = "Exit program";                            // 7
         reader = new BufferedReader(new InputStreamReader(System.in));
     }
     

@@ -16,7 +16,6 @@ import com.amazonaws.services.glacier.model.UploadArchiveRequest;
 import com.amazonaws.services.glacier.model.UploadArchiveResult;
 import com.amazonaws.services.glacier.transfer.ArchiveTransferManager;
 import com.amazonaws.services.glacier.transfer.UploadResult;
-import com.amazonaws.services.glacier.transfer.JobStatusMonitor;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
